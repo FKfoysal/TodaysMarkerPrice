@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProductDetailsActivity">
+    <ScrollView
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:background="#D1ADA9"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:background="@drawable/input_design_text"
+                android:backgroundTint="#E2BF89"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/product_detail_image_id"
+                            android:layout_width="150dp"
+                            android:scaleType="centerCrop"
+                            android:layout_marginRight="5dp"
+                            android:layout_height="150dp" />
+                        <TextView
+                            android:id="@+id/product_detail_name_id"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:textColor="@android:color/black"
+                            android:textAlignment="center"
+                            android:text="Product Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/product_detail_description_id"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@android:color/black"
+                            android:textAlignment="center"
+                            android:text="Product Description"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/product_detail_price_id"
+                            android:textStyle="bold"
+                            android:textSize="25sp"
+                            android:textColor="#19309C"
+                            android:textAlignment="center"
+                            android:text="Product price"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                            android:elevation="6dp"
+                            android:id="@+id/elegant_number_btn_id"
+                            app:textSize="10dp"
+                            app:initialNumber="1"
+                            app:finalNumber="10"
+                            android:background="@drawable/joinnow"
+                            android:layout_marginTop="20sp"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+                    </LinearLayout>
+                </LinearLayout>
+                <Button
+                    android:id="@+id/fab_add_product_id"
+                    android:text="Add To Cart"
+                    android:textSize="20sp"
+                    android:textAllCaps="false"
+                    android:padding="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/joinnow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/comment_id"
+                android:hint="Your Comments Here"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:inputType="text"
+                android:background="@drawable/input_edittext_design"
+                android:layout_width="match_parent"
+                android:layout_height="120dp" />
+
+
+
+            <RatingBar
+                android:id="@+id/rating"
+                android:layout_gravity="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/ratingBarStyle "
+                android:numStars="5"
+                android:stepSize="0.1"
+                android:clickable="true"
+                android:isIndicator="true" />
+
+            <Button
+                android:id="@+id/comment_btn_id"
+                android:text="Comment"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/white"
+                android:background="@color/colorPrimaryDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyler_view_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

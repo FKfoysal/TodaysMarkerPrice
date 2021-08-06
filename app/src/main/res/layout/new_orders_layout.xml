@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="11dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/new_ordere_user_name_id"
+                android:textColor="@android:color/white"
+                android:text="User Name"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="7dp"
+                android:background="@color/colorPrimary"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/new_order_phone_number_id"
+                android:textColor="@android:color/white"
+                android:text="Phone Number"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="7dp"
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/new_order_total_price_id"
+                android:textColor="@android:color/white"
+                android:text="Total Price"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20sp"
+                android:background="@color/colorPrimary"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/new_order_address_city_id"
+                android:textColor="@android:color/white"
+                android:text="Address, city"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/colorPrimary"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/new_order_date_time_id"
+                android:textColor="@android:color/white"
+                android:text="Date, Time"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/colorPrimary"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/new_order_show_btn_id"
+                android:text="Show this Order Products"
+                android:textSize="22dp"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:background="@drawable/input_design_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

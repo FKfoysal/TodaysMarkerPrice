@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "89571215975",
+    "firebase_url": "https://todaymarketrate-c3c3e.firebaseio.com",
+    "project_id": "todaymarketrate-c3c3e",
+    "storage_bucket": "todaymarketrate-c3c3e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:89571215975:android:07065b0f33a018e1ec62c2",
+        "android_client_info": {
+          "package_name": "gub.foysal.todaysmarkerprice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "89571215975-j2jhq1b97h608pu18q223aabm34gimi0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "gub.foysal.todaysmarkerprice",
+            "certificate_hash": "4be4b40716b9c951ee5d044f420150355d29bd9e"
+          }
+        },
+        {
+          "client_id": "89571215975-9jatgja5esta4d0jsphjj17uchglrvek.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMFjHg5zop9XFA1mETXyvqdbBXsvjbUOI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "89571215975-9jatgja5esta4d0jsphjj17uchglrvek.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

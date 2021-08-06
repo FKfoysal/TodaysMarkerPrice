@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchProductActivity">
+    <RelativeLayout
+        android:id="@+id/search_relative_id"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:layout_height="110dp">
+
+        <EditText
+            android:id="@+id/search_product_name_id"
+            android:textColor="#BB3BD1"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:hint="name, price, location"
+            android:textColorHint="#BB3BD1"
+            android:background="@android:color/white"
+            android:padding="8dp"
+            android:layout_width="260dp"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/search_product_btn_id"
+            android:layout_below="@+id/search_product_name_id"
+            android:text="name"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/search_product_price_btn_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/search_product_name_id"
+            android:layout_toRightOf="@+id/search_product_btn_id"
+            android:background="@color/colorPrimary"
+            android:text="price"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/search_product_location_btn_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/search_product_name_id"
+            android:layout_toRightOf="@+id/search_product_price_btn_id"
+            android:background="@color/colorPrimary"
+            android:text="location"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/search_list_recyler_id"
+        android:layout_below="@id/search_relative_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

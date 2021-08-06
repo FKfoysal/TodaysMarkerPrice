@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".AdminCatagoryActivity">
+
+    <LinearLayout
+        android:layout_weight=".1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Add New Product"
+            android:textStyle="bold"
+            android:textSize="28dp"
+            android:textColor="@android:color/holo_orange_light"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/linear_catagory_id"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/piaj_id"
+                    android:src="@drawable/peaj"
+                    android:onClick="PeajClick"
+                    android:layout_width="100dp"
+                    android:layout_height="140dp" />
+                <ImageView
+                    android:id="@+id/mosla_id"
+                    android:src="@drawable/mosla"
+                    android:onClick="MoslaClick"
+                    android:layout_width="100dp"
+                    android:layout_height="140dp" />
+                <ImageView
+                    android:id="@+id/holud_id"
+                    android:src="@drawable/holud"
+                    android:onClick="HoludClick"
+                    android:layout_width="100dp"
+                    android:layout_height="140dp" />
+                <ImageView
+                    android:id="@+id/rosun_id"
+                    android:src="@drawable/rosun"
+                    android:onClick="RosunClick"
+                    android:layout_width="100dp"
+                    android:layout_height="140dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linear_catagory2_id"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/puishak_id"
+                    android:src="@drawable/puishak"
+                    android:onClick="PushakClick"
+                    android:layout_width="100dp"
+                    android:layout_height="140dp" />
+                <ImageView
+                    android:id="@+id/lalshak_id"
+                    android:src="@drawable/lalshak"
+                    android:onClick="LalshakClick"
+                    android:layout_width="100dp"
+                    android:layout_height="140dp" />
+                <ImageView
+                    android:id="@+id/kolmishak_id"
+                    android:src="@drawable/kolmishak"
+                    android:onClick="KolmishakClick"
+                    android:layout_width="100dp"
+                    android:layout_height="140dp" />
+                <ImageView
+                    android:id="@+id/palonshak_id"
+                    android:src="@drawable/palonshak"
+                    android:onClick="PalonshakClick"
+                    android:layout_width="100dp"
+                    android:layout_height="140dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linear_catagory3_id"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/cicinga_id"
+                    android:src="@drawable/cicinga"
+                    android:layout_width="100dp"
+                    android:onClick="CicingaClick"
+                    android:layout_height="140dp" />
+                <ImageView
+                    android:id="@+id/dundol_id"
+                    android:src="@drawable/dundol"
+                    android:onClick="DundolClick"
+                    android:layout_width="100dp"
+                    android:layout_height="140dp" />
+                <ImageView
+                    android:id="@+id/jali_id"
+                    android:src="@drawable/jali"
+                    android:onClick="JaliClick"
+                    android:layout_width="100dp"
+                    android:layout_height="140dp" />
+                <ImageView
+                    android:id="@+id/kakrol_id"
+                    android:src="@drawable/kakrol"
+                    android:onClick="KakrolClick"
+                    android:layout_width="100dp"
+                    android:layout_height="140dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_weight=".1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/maintain_product_id"
+            android:text="Maintain Products"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/joinnow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/check_new_order_product_id"
+            android:text="Check New Order"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/joinnow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/logout_admin_id"
+            android:text="Logout"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/joinnow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
